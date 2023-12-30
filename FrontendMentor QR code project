@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32✕32" href="./images/favicon-32*32.png">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url(https://fonts.google.com/specimen/Outfit);
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+*{
+    font-family: "Outfit",sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--Light-gray);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.intierbody{
+    background-color: var(--White);
+    width: 350px;
+    height: 100%;
+    text-align: center;
+    box-shadow: 16px 19px 17px rgba(0,0,0,0.1);
+    border-radius: 1rem;
+}
+
+.the-qr-image{
+    margin: 10% auto;
+}
+
+.the-qr-image img{
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.the-qr-image h2{
+    color: var(--Dark-blue);
+    font-weight: 700;
+    margin: 5% auto;
+}
+
+.the-qr-image p{
+    color: var(--Grayish-blue);
+    font-weight: 400;
+    margin: 1rem 0;
+}
+    </style>
+    <title>Fronted Mentor | QR code component</title>
+</head>
+<body>
+    <main>
+        <div class="intierbody">
+            <div class="the-qr-image">
+                <img src="./images/image-qr-code.png" alt="qrcode"/>
+                <h2>Improve your front-end <br> skills by building projects</h2>
+                <p>Scan the QR code to visit Frontend <br> Mentor and take your coding skills to <br> the next level</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
